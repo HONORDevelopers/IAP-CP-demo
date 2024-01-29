@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">IAP-CP</string>
+    <!-- appid 从开发者平台获取-->
+    <string name="the_appid">000000000</string>
+    <!-- cpid 从开发者平台获取-->
+    <string name="the_cpid">0000000000000000000</string>
+
+    <string name="getProductInfo">获取商品信息</string>
+    <string name="obtainOwnedPurchases">查询用户已购买商品</string>
+    <string name="createProductOrderIntent">购买PMS商品</string>
+    <string name="createProductOrderIntentWithPrice">自定义商品购买</string>
+    <string name="cancelSubscription">取消订阅</string>
+    <string name="obtainPurchaseRecord">查看用户历史购买记录</string>
+
+</resources>
