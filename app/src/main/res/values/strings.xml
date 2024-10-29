@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">IAP-CP</string>
+    <!-- appid 从开发者平台获取-->
+    <string name="the_appid">000000000</string>
+    <!-- cpid 从开发者平台获取-->
+    <string name="the_cpid">0000000000000000000</string>
+
+    <string name="getProductInfo">getProductInfo</string>
+    <string name="obtainOwnedPurchases">obtainOwnedPurchases</string>
+    <string name="createProductOrderIntent">createProductOrderIntent</string>
+    <string name="createProductOrderIntentWithPrice">createProductOrderIntentWithPrice</string>
+    <string name="cancelSubscription">cancelSubscription</string>
+    <string name="obtainPurchaseRecord">obtainPurchaseRecord</string>
+</resources>

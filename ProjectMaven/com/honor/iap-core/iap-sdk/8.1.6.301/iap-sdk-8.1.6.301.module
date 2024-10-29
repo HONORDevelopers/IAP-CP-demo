@@ -1,0 +1,83 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "com.honor.iap-core",
+    "module": "iap-sdk",
+    "version": "8.1.6.301",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "7.3.3"
+    }
+  },
+  "variants": [
+    {
+      "name": "outwardReleaseVariantOutwardReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "com.honor.iap-core",
+          "module": "iap-sdk-comm",
+          "version": {
+            "requires": "8.1.6.301"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "iap-sdk-8.1.6.301.aar",
+          "url": "iap-sdk-8.1.6.301.aar",
+          "size": 59133,
+          "sha512": "4ceb903df1879368022cb6d5a5c588609541312cef9205a92b0280aae214087651116cc93087f69e529c9580d4ce6825aeb28da4db87fab8c895042e1f01f660",
+          "sha256": "0cd5f134b99d786eb9dac8f0ae734eb0c6b909d022a673f0e7544cd67583c00e",
+          "sha1": "d7336499b034b04e98545d991d40dc837caf541e",
+          "md5": "161e66c7244293311afaa2de45c0f99b"
+        }
+      ]
+    },
+    {
+      "name": "outwardReleaseVariantOutwardReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.appcompat",
+          "module": "appcompat",
+          "version": {
+            "requires": "1.4.2"
+          }
+        },
+        {
+          "group": "com.honor.iap-core",
+          "module": "iap-sdk-comm",
+          "version": {
+            "requires": "8.1.6.301"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "iap-sdk-8.1.6.301.aar",
+          "url": "iap-sdk-8.1.6.301.aar",
+          "size": 59133,
+          "sha512": "4ceb903df1879368022cb6d5a5c588609541312cef9205a92b0280aae214087651116cc93087f69e529c9580d4ce6825aeb28da4db87fab8c895042e1f01f660",
+          "sha256": "0cd5f134b99d786eb9dac8f0ae734eb0c6b909d022a673f0e7544cd67583c00e",
+          "sha1": "d7336499b034b04e98545d991d40dc837caf541e",
+          "md5": "161e66c7244293311afaa2de45c0f99b"
+        }
+      ]
+    }
+  ]
+}

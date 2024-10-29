@@ -1,0 +1,66 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 31
+    buildToolsVersion "31.0.0"
+
+    defaultConfig {
+        applicationId "xxx.xxx.xxx"
+        minSdk 21
+        targetSdk 31
+        versionCode 1
+        versionName "1.0"
+        buildConfigField "String", "PUBLIC_KEY", '"***************************************************************************"'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    signingConfigs {
+        debug {
+            storeFile file('demo1.jks')
+            storePassword '12345678'
+            keyAlias 'key0'
+            keyPassword '12345678'
+        }
+        release {
+            storeFile file('demo1.jks')
+            storePassword '12345678'
+            keyAlias 'key0'
+            keyPassword '12345678'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release//签名文件release和debug保存一致
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug//签名文件release和debug保存一致
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+dependencies {
+    //在线Maven
+    implementation 'com.hihonor.mcs:iap-sdk:8.1.6.300'
+    //本地Maven
+//    implementation 'com.honor.iap-core:iap-sdk:8.1.6.301'
+    implementation 'androidx.appcompat:appcompat:1.4.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}

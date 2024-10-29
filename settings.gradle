@@ -1,0 +1,14 @@
+/*dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+
+        maven {
+            url uri("${rootDir}/ProjectMaven")
+        }
+    }
+}*/
+rootProject.name = "cp-demo"
+include ':app'
